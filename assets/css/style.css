@@ -15010,8 +15010,8 @@ div#small-dialog iframe, div#small-dialog1 iframe, div#small-dialog2 iframe, div
 
 @media (max-width: 384px) {
     .main-slider .banner-info-bg h5 {
-        font-size: 25px;
-        line-height: 35px;
+        font-size: 20px;
+        line-height: 25px;
     }
 }
 
