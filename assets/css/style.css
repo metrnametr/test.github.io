@@ -17455,7 +17455,7 @@ ul.breadcrumbs-custom-path li a {
 
 
   .swiper-pagination-bullet {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       background-color: var(--primary-color);
   }
