@@ -17394,3 +17394,68 @@ ul.breadcrumbs-custom-path li a {
         display: none;
     }    
   }
+
+  .mySwiper {
+    overflow: visible;
+  }
+
+  .feedback {
+      margin-bottom: 30px;
+  }
+
+  .feedback-item {
+      padding: 30px 15px;
+      box-shadow: 0px 3px 5px 1px rgba(168, 182, 192, 0.22);
+      border-radius: 5px;
+      padding: 51px 28px 31px 28px;
+      height: 100%;
+  }
+
+  .feedback-header {
+      margin-bottom: 25px;
+  }
+
+  .feedback-header h4 {
+      margin-bottom: 15px;
+  }
+
+  .swiper-container {
+    padding: 20px;
+    margin: -20px;
+    overflow: hidden;
+  }
+
+  .fa-star {
+      color: var(--primary-color);
+  }
+
+  .slider-nav {
+      position: relative;
+      margin-top: 40px;
+      margin-bottom: 30px;
+      height: 50px;
+  }
+
+  .swiper-slide {
+      height: auto;
+  }
+
+  .swiper-button-prev, .swiper-button-next {
+      color: var(--primary-color);
+      z-index: 100;
+  }
+
+
+  @media(max-width: 580px) {
+    .swiper-pagination-bullet {
+        width: 15px !important;
+        height: 15px !important;
+    }
+  }
+
+
+  .swiper-pagination-bullet {
+      width: 24px;
+      height: 24px;
+      background-color: var(--primary-color);
+  }
