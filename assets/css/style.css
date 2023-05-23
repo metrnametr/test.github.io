@@ -14997,7 +14997,7 @@ div#small-dialog iframe, div#small-dialog1 iframe, div#small-dialog2 iframe, div
     }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 490px) {
     .main-slider .banner-info-bg h5 {
         font-size: 30px;
         line-height: 40px;
