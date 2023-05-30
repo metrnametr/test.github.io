@@ -131,6 +131,9 @@
             <li class="nav-item">
               <a class="nav-link scroll" href="#warranty">Гарантии</a>
             </li>           
+            <li class="nav-item">
+              <a class="nav-link scroll" href="#feedback">Отзывы</a>
+            </li>           
           </ul>
           <ul class="navbar-nav search-right mt-lg-0 mt-2">
             <li>
@@ -199,7 +202,7 @@
   
 <section class="features-4" id="advantages">
   <div class="features4-block py-5 advantages">
-	<div class="container px-0 py-lg-4">
+	<div class="container py-lg-4">
         <div class="title-content px-3 text-center mb-lg-5 mt-4">
           <h3 class="hny-title">Преимущества</h3>
           <h6 class="sub-title">Почему все больше людей обращаются именно к нам?</h6>
@@ -207,7 +210,75 @@
 
 <div>
 
-   <div class="">
+
+  <div class="adv row justify-content-center mt-4">
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vitae..</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vitae..</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vitae..</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet,</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, saepe tempora! Laborum nobis necessitatibus, laudantium tenetur dolorum ab perferendis optio voluptas id aliquid corporis sunt dicta nesciunt, est corrupti fuga!</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, vitae..</p>
+    </div>
+
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet,</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet,</p>
+    </div>
+    <div class="adv-item col-lg-4 mb-4 text-center">
+      <div class="adv-image mb-3">
+        <img src="https://cdn.icon-icons.com/icons2/1471/PNG/512/07-wallet_101185.png" alt="" class="adv-icon">
+      </div>
+      <h4 class="adv-title mb-3">Лучшие цены</h4>
+      <p class="adv-description">Lorem ipsum dolor sit amet,</p>
+    </div>
+  </div>
+
+   <!-- <div class="">
     <section class="timeline">
         <article class="timeline__item">
             <header>
@@ -241,7 +312,7 @@
             </header>
         </article>
     </section>
-   </div>
+   </div> -->
 
 <!-- <div class="col mb-4">
 <div class="card h-100">
@@ -878,9 +949,13 @@
     $('.scroll').on('click', function(e) {
     
     e.preventDefault();
-
-    var target = $(this).attr('href'),
-    offset = $(target).offset().top-20;//коррекция отступа при переходе по якорям
+    var target = $(this).attr('href');
+      let = currentOffset = 20;
+      console.log('target', target)
+    if (target === '#feedback') {
+      currentOffset = 100;
+    }
+    var offset = $(target).offset().top-currentOffset;//коррекция отступа при переходе по якорям
     $(document).scrollTop(offset);
 
 }); 
@@ -889,10 +964,10 @@
 jQuery(window).scroll(function(){
          var $sections = $('section');
 	$sections.each(function(i,el){
+    var id = $(el).attr('id');
         var top  = $(el).offset().top-80;
         var bottom = top +$(el).height();
         var scroll = $(window).scrollTop();
-        var id = $(el).attr('id');
     	if( scroll > top && scroll < bottom){
             $('a.active').removeClass('active');
 			$('a[href="#'+id+'"]').addClass('active');
@@ -933,52 +1008,52 @@ $(function(){
 
  
  
-$(document).ready(function() {
-    $(function() {
-        $('#form').submit(function(e) {
-            e.preventDefault();
-            var form = $(this);
-            var post_data = form.serialize();
-            $(form).html('<div class="mt-4 mb-4"><h4 class="text-uppercase"> Ваше сообщение отправляется! Please Wait...</h4></div>');
-            $.ajax({
-                type: 'POST',
-                url: "mail.php",
-                data: post_data,
-                success: function(msg) {
-                    $(form).fadeOut(500, function() {
-                        form.html(msg).fadeIn()
-                    })
-                }
-            })
-        })
-    })
-});
-$(document).ready(function() {
-    $(function() {
-        $('#_form').submit(function(e) {
-            e.preventDefault();
-            var form = $(this);
-            var post_data = form.serialize();
-            $(form).html('<div class="mt-4 mb-4"><h4 class="text-uppercase"> Ваше сообщение отправляется! Please Wait...</h4></div>');
-            $.ajax({
-                type: 'POST',
-                url: "mail.php",
-                data: post_data,
-                success: function(msg) {
-                    $(form).fadeOut(500, function() {
-                        form.html(msg).fadeIn()
-                    })
-                }
-            })
-        })
-    })
-});
+// $(document).ready(function() {
+//     $(function() {
+//         $('#form').submit(function(e) {
+//             e.preventDefault();
+//             var form = $(this);
+//             var post_data = form.serialize();
+//             $(form).html('<div class="mt-4 mb-4"><h4 class="text-uppercase"> Ваше сообщение отправляется! Please Wait...</h4></div>');
+//             $.ajax({
+//                 type: 'POST',
+//                 url: "mail.php",
+//                 data: post_data,
+//                 success: function(msg) {
+//                     $(form).fadeOut(500, function() {
+//                         form.html(msg).fadeIn()
+//                     })
+//                 }
+//             })
+//         })
+//     })
+// });
+// $(document).ready(function() {
+//     $(function() {
+//         $('#_form').submit(function(e) {
+//             e.preventDefault();
+//             var form = $(this);
+//             var post_data = form.serialize();
+//             $(form).html('<div class="mt-4 mb-4"><h4 class="text-uppercase"> Ваше сообщение отправляется! Please Wait...</h4></div>');
+//             $.ajax({
+//                 type: 'POST',
+//                 url: "mail.php",
+//                 data: post_data,
+//                 success: function(msg) {
+//                     $(form).fadeOut(500, function() {
+//                         form.html(msg).fadeIn()
+//                     })
+//                 }
+//             })
+//         })
+//     })
+// });
 </script>
 
 <script>
-    window.requestAnimationFrame(function() {
-    document.querySelector('.timeline').classList.add('timeline--show');
-});
+//     window.requestAnimationFrame(function() {
+//     document.querySelector('.timeline').classList.add('timeline--show');
+// });
 </script>
 <script src="./assets/js/bootstrap.bundle.min.js"></script>
 <script src="./assets/js/swiper-bundle.min.js"></script>
